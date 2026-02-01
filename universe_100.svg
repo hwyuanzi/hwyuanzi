@@ -1,0 +1,609 @@
+<svg width="850" height="450" viewBox="0 0 850 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: white; }
+      .text-mono { font-family: 'SF Mono', Consolas, 'Courier New', monospace; fill: rgba(255,255,255,0.6); }
+      
+      .title { font-size: 52px; font-weight: 700; letter-spacing: -2px; }
+      .subtitle { font-size: 20px; font-weight: 300; opacity: 0.9; letter-spacing: 0.5px; }
+      
+      .quote-text { font-size: 17px; font-weight: 400; font-style: italic; letter-spacing: 0.3px; text-anchor: middle; }
+      .quote-author { font-size: 12px; font-weight: 400; letter-spacing: 1px; text-anchor: middle; text-transform: uppercase; }
+
+      @keyframes breathe { 0%, 100% { transform: scale(1); opacity: 0.3; } 50% { transform: scale(1.2); opacity: 0.6; } }
+      @keyframes orbit-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes sheen { 0% { transform: translateX(-200%) skewX(-30deg); } 100% { transform: translateX(200%) skewX(-30deg); } }
+
+      .orbit-slow { animation: orbit-spin 120s linear infinite; transform-origin: 425px 225px; }
+      .orbit-mid { animation: orbit-spin 80s linear infinite reverse; transform-origin: 425px 225px; }
+      .quantum-blob { animation: breathe 8s ease-in-out infinite; mix-blend-mode: screen; }
+      .sheen-layer { animation: sheen 10s ease-in-out infinite; }
+
+      @keyframes quote-cycle {
+        0% { opacity: 0; transform: translateY(15px); filter: blur(4px); }
+        0.20% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        0.80% { opacity: 1; transform: translateY(0); filter: blur(0); }
+        1.00% { opacity: 0; transform: translateY(-15px); filter: blur(4px); }
+        100% { opacity: 0; transform: translateY(-15px); }
+      }
+
+      .quote-container { 
+        opacity: 0; 
+        animation: quote-cycle 600s linear infinite; 
+        transform-origin: center;
+      }
+    </style>
+
+    <radialGradient id="bg-grad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(425 225) rotate(90) scale(400 800)">
+      <stop stop-color="#000000"/>
+      <stop offset="0.4" stop-color="#0b041c"/>
+      <stop offset="1" stop-color="#1a0b2e"/>
+    </radialGradient>
+    
+    <linearGradient id="holo-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="50%" stop-color="rgba(255,255,255,0.1)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.05)"/>
+    </linearGradient>
+
+    <clipPath id="card-clip">
+      <rect width="650" height="300" rx="32" />
+    </clipPath>
+  </defs>
+
+  <rect width="850" height="450" rx="20" fill="url(#bg-grad)"/>
+  <circle cx="100" cy="400" r="300" fill="#4f00ff" filter="blur(80px)" class="quantum-blob"/>
+  <circle cx="750" cy="50" r="250" fill="#00d4ff" filter="blur(80px)" class="quantum-blob" style="animation-delay: -4s"/>
+
+  <g class="orbit-slow" opacity="0.3">
+    <circle cx="425" cy="225" r="350" stroke="white" stroke-width="0.5" stroke-dasharray="10 20"/>
+    <circle cx="425" cy="-125" r="3" fill="white"/>
+  </g>
+
+  <g transform="translate(100, 75)">
+    <rect width="650" height="300" rx="32" fill="rgba(10,10,20,0.4)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <g clip-path="url(#card-clip)">
+        <rect width="650" height="300" rx="32" fill="url(#holo-grad)" class="sheen-layer" opacity="0.3"/>
+    </g>
+
+    <g transform="translate(325, 60)"> 
+      <text x="0" y="0" class="text-main title" text-anchor="middle">Hollan Yuan</text>
+      <text x="0" y="40" class="text-main subtitle" text-anchor="middle">Computer Science &amp; Data Science &amp; Physics @ NYU</text>
+      
+      <g transform="translate(0, 69)">
+         <rect x="-250" y="0" width="500" height="1" fill="rgba(255,255,255,0.2)"/>
+         
+         <text y="24" text-anchor="middle" class="text-mono" style="font-size:9px; letter-spacing:1px;">
+            <tspan fill="#00d4ff">SOFTWARE</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#c084fc" dx="4">DATA</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#ff00a0" dx="4">AI</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#00d4ff" dx="4">ASTRONOMY</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#c084fc" dx="4">AVIATION</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#ff00a0" dx="4">PHILOSOPHY</tspan>
+         </text>
+
+         <text y="42" text-anchor="middle" class="text-mono" style="font-size:9px; letter-spacing:1px;">
+            <tspan fill="#00d4ff">GUITAR</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#c084fc" dx="4">PIANO</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#ff00a0" dx="4">EDM</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#00d4ff" dx="4">DJ</tspan>
+            <tspan fill="rgba(255,255,255,0.3)" dx="4"> • </tspan>
+            <tspan fill="#c084fc" dx="4">TRAVEL</tspan>
+         </text>
+      </g>
+
+      <g transform="translate(0, 150)">
+        <rect x="-280" y="-30" width="560" height="80" rx="16" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.05)"/>
+        
+      <g class="quote-container" style="animation-delay: 0.0s">
+        <text x="0" y="0" class="text-main quote-text">“The best way to predict the future is to invent it.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Alan Kay</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 6.0s">
+        <text x="0" y="0" class="text-main quote-text">“Talk is cheap. Show me the code.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Linus Torvalds</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 12.0s">
+        <text x="0" y="0" class="text-main quote-text">“Software is eating the world.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Marc Andreessen</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 18.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 24.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 30.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 36.0s">
+        <text x="0" y="0" class="text-main quote-text">“Code is like humor. When you have to explain it, it’s bad.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Cory House</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 42.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 48.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 54.0s">
+        <text x="0" y="0" class="text-main quote-text">“Any sufficiently advanced technology is indistinguishable from magic.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Arthur C. Clarke</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 60.0s">
+        <text x="0" y="0" class="text-main quote-text">“The universe is under no obligation to make sense to you.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neil deGrasse Tyson</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 66.0s">
+        <text x="0" y="0" class="text-main quote-text">“Data is the new oil.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Clive Humby</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 72.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 78.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 84.0s">
+        <text x="0" y="0" class="text-main quote-text">“Creativity is intelligence having fun.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 90.0s">
+        <text x="0" y="0" class="text-main quote-text">“Innovation distinguishes between a leader and a follower.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 96.0s">
+        <text x="0" y="0" class="text-main quote-text">“Your time is limited, so don't waste it living someone else's life.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 102.0s">
+        <text x="0" y="0" class="text-main quote-text">“Freedom is the right to tell people what they do not want to hear.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— George Orwell</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 108.0s">
+        <text x="0" y="0" class="text-main quote-text">“Knowledge is power.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Francis Bacon</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 114.0s">
+        <text x="0" y="0" class="text-main quote-text">“Computers are useless. They can only give you answers.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Pablo Picasso</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 120.0s">
+        <text x="0" y="0" class="text-main quote-text">“Freedom is the right to tell people what they do not want to hear.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— George Orwell</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 126.0s">
+        <text x="0" y="0" class="text-main quote-text">“Data is the new oil.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Clive Humby</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 132.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 138.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 144.0s">
+        <text x="0" y="0" class="text-main quote-text">“The universe is under no obligation to make sense to you.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neil deGrasse Tyson</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 150.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 156.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 162.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 168.0s">
+        <text x="0" y="0" class="text-main quote-text">“Knowledge is power.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Francis Bacon</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 174.0s">
+        <text x="0" y="0" class="text-main quote-text">“Innovation distinguishes between a leader and a follower.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 180.0s">
+        <text x="0" y="0" class="text-main quote-text">“Data is the new oil.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Clive Humby</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 186.0s">
+        <text x="0" y="0" class="text-main quote-text">“Freedom is the right to tell people what they do not want to hear.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— George Orwell</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 192.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 198.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 204.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 210.0s">
+        <text x="0" y="0" class="text-main quote-text">“The universe is under no obligation to make sense to you.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neil deGrasse Tyson</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 216.0s">
+        <text x="0" y="0" class="text-main quote-text">“Code is like humor. When you have to explain it, it’s bad.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Cory House</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 222.0s">
+        <text x="0" y="0" class="text-main quote-text">“Computers are useless. They can only give you answers.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Pablo Picasso</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 228.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 234.0s">
+        <text x="0" y="0" class="text-main quote-text">“Freedom is the right to tell people what they do not want to hear.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— George Orwell</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 240.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 246.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 252.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 258.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 264.0s">
+        <text x="0" y="0" class="text-main quote-text">“Knowledge is power.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Francis Bacon</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 270.0s">
+        <text x="0" y="0" class="text-main quote-text">“The best way to predict the future is to invent it.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Alan Kay</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 276.0s">
+        <text x="0" y="0" class="text-main quote-text">“Creativity is intelligence having fun.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 282.0s">
+        <text x="0" y="0" class="text-main quote-text">“Your time is limited, so don't waste it living someone else's life.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 288.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 294.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 300.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 306.0s">
+        <text x="0" y="0" class="text-main quote-text">“Freedom is the right to tell people what they do not want to hear.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— George Orwell</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 312.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 318.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 324.0s">
+        <text x="0" y="0" class="text-main quote-text">“Talk is cheap. Show me the code.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Linus Torvalds</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 330.0s">
+        <text x="0" y="0" class="text-main quote-text">“The best way to predict the future is to invent it.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Alan Kay</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 336.0s">
+        <text x="0" y="0" class="text-main quote-text">“The best way to predict the future is to invent it.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Alan Kay</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 342.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 348.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 354.0s">
+        <text x="0" y="0" class="text-main quote-text">“Any sufficiently advanced technology is indistinguishable from magic.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Arthur C. Clarke</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 360.0s">
+        <text x="0" y="0" class="text-main quote-text">“Software is eating the world.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Marc Andreessen</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 366.0s">
+        <text x="0" y="0" class="text-main quote-text">“Knowledge is power.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Francis Bacon</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 372.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 378.0s">
+        <text x="0" y="0" class="text-main quote-text">“Innovation distinguishes between a leader and a follower.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 384.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 390.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 396.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 402.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 408.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 414.0s">
+        <text x="0" y="0" class="text-main quote-text">“The best way to predict the future is to invent it.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Alan Kay</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 420.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 426.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 432.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 438.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 444.0s">
+        <text x="0" y="0" class="text-main quote-text">“It's not a bug, it's a feature.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Anonymous</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 450.0s">
+        <text x="0" y="0" class="text-main quote-text">“Java is to JavaScript what car is to Carpet.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Chris Heilmann</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 456.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 462.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 468.0s">
+        <text x="0" y="0" class="text-main quote-text">“Innovation distinguishes between a leader and a follower.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 474.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 480.0s">
+        <text x="0" y="0" class="text-main quote-text">“Software is eating the world.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Marc Andreessen</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 486.0s">
+        <text x="0" y="0" class="text-main quote-text">“Data is the new oil.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Clive Humby</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 492.0s">
+        <text x="0" y="0" class="text-main quote-text">“Code is like humor. When you have to explain it, it’s bad.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Cory House</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 498.0s">
+        <text x="0" y="0" class="text-main quote-text">“Any sufficiently advanced technology is indistinguishable from magic.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Arthur C. Clarke</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 504.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 510.0s">
+        <text x="0" y="0" class="text-main quote-text">“Your time is limited, so don't waste it living someone else's life.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 516.0s">
+        <text x="0" y="0" class="text-main quote-text">“Optimism is an occupational hazard of programming.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Kent Beck</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 522.0s">
+        <text x="0" y="0" class="text-main quote-text">“Stay hungry, stay foolish.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 528.0s">
+        <text x="0" y="0" class="text-main quote-text">“Your time is limited, so don't waste it living someone else's life.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Steve Jobs</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 534.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 540.0s">
+        <text x="0" y="0" class="text-main quote-text">“Creativity is intelligence having fun.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 546.0s">
+        <text x="0" y="0" class="text-main quote-text">“Knowledge is power.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Francis Bacon</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 552.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 558.0s">
+        <text x="0" y="0" class="text-main quote-text">“Digital design is like painting, except the paint never dries.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neville Brody</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 564.0s">
+        <text x="0" y="0" class="text-main quote-text">“Simplicity is the ultimate sophistication.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Leonardo da Vinci</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 570.0s">
+        <text x="0" y="0" class="text-main quote-text">“Computers are useless. They can only give you answers.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Pablo Picasso</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 576.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 582.0s">
+        <text x="0" y="0" class="text-main quote-text">“Code is like humor. When you have to explain it, it’s bad.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Cory House</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 588.0s">
+        <text x="0" y="0" class="text-main quote-text">“The universe is under no obligation to make sense to you.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Neil deGrasse Tyson</text>
+      </g>
+    
+      <g class="quote-container" style="animation-delay: 594.0s">
+        <text x="0" y="0" class="text-main quote-text">“Information is not knowledge.”</text>
+        <text x="0" y="30" class="text-mono quote-author">— Albert Einstein</text>
+      </g>
+    
+      </g>
+    </g>
+  </g>
+</svg>
