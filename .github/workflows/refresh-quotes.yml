@@ -1,0 +1,49 @@
+name: Refresh profile quotes
+
+on:
+  push:
+    paths:
+      - "scripts/generate_universe.py"
+      - ".github/workflows/refresh-quotes.yml"
+      - "signature.svg"
+      - "README.md"
+  schedule:
+    # 08:17 Singapore time. GitHub schedules may start a little later during peak load.
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile-quotes
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply palette and generate a fresh quote sequence
+        run: python scripts/generate_universe.py
+
+      - name: Commit the refreshed SVG
+        shell: bash
+        run: |
+          if git diff --quiet -- universe_100.svg; then
+            echo "No SVG changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add universe_100.svg
+          git commit -m "chore: refresh Claude profile palette [skip ci]"
+          git push
