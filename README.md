@@ -6,11 +6,11 @@
 
 <div align="center">
   <a href="https://www.hyuan.io">
-    <img src="https://img.shields.io/badge/WEBSITE-2B2825?style=for-the-badge&logo=safari&logoColor=F4EEE8" height="25" alt="Hollan Yuan's website">
+    <img src="https://img.shields.io/badge/WEBSITE-D97757?style=for-the-badge&logo=safari&logoColor=FFF9F3" height="25" alt="Hollan Yuan's website">
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/hollanyuan">
-    <img src="https://img.shields.io/badge/LINKEDIN-D97757?style=for-the-badge&logo=linkedin&logoColor=FFF8F1" height="25" alt="Hollan Yuan on LinkedIn">
+    <img src="https://img.shields.io/badge/LINKEDIN-2D2926?style=for-the-badge&logo=linkedin&logoColor=FFF9F3" height="25" alt="Hollan Yuan on LinkedIn">
   </a>
 </div>
 
