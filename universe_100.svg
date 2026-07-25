@@ -115,100 +115,100 @@
     <text x="178" y="322" class="mono" font-size="8" letter-spacing="1.3" fill="#8A6558">CURRENT FREQUENCY</text>
     <!-- QUOTES_START -->
     <g class="quote-container" data-quote="1" opacity="1" style="animation-delay:0s">
-      <text x="425" y="342" class="quote-text">“The art challenges the technology, and the technology inspires the art.”</text>
-      <text x="425" y="371" class="quote-author">— John Lasseter</text>
+      <text x="425" y="342" class="quote-text">“The future depends on what you do today.”</text>
+      <text x="425" y="371" class="quote-author">— Mahatma Gandhi</text>
     </g>
     <g class="quote-container" data-quote="2" opacity="0" style="animation-delay:7s">
-      <text x="425" y="342" class="quote-text">“The most dangerous phrase is: we've always done it this way.”</text>
-      <text x="425" y="371" class="quote-author">— Grace Hopper</text>
-    </g>
-    <g class="quote-container" data-quote="3" opacity="0" style="animation-delay:14s">
-      <text x="425" y="342" class="quote-text">“The function of good software is to make the complex appear simple.”</text>
-      <text x="425" y="371" class="quote-author">— Grady Booch</text>
-    </g>
-    <g class="quote-container" data-quote="4" opacity="0" style="animation-delay:21s">
-      <text x="425" y="342" class="quote-text">“Premature optimization is the root of all evil.”</text>
-      <text x="425" y="371" class="quote-author">— Donald Knuth</text>
-    </g>
-    <g class="quote-container" data-quote="5" opacity="0" style="animation-delay:28s">
-      <text x="425" y="342" class="quote-text">“Science is a way of thinking much more than a body of knowledge.”</text>
+      <text x="425" y="342" class="quote-text">“Somewhere, something incredible is waiting to be known.”</text>
       <text x="425" y="371" class="quote-author">— Carl Sagan</text>
     </g>
-    <g class="quote-container" data-quote="6" opacity="0" style="animation-delay:35s">
-      <text x="425" y="342" class="quote-text">“Make it work, make it right, make it fast.”</text>
-      <text x="425" y="371" class="quote-author">— Kent Beck</text>
-    </g>
-    <g class="quote-container" data-quote="7" opacity="0" style="animation-delay:42s">
-      <text x="425" y="342" class="quote-text">“Creativity is intelligence having fun.”</text>
-      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
-    </g>
-    <g class="quote-container" data-quote="8" opacity="0" style="animation-delay:49s">
-      <text x="425" y="342" class="quote-text">“The important thing is to never stop questioning.”</text>
-      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
-    </g>
-    <g class="quote-container" data-quote="9" opacity="0" style="animation-delay:56s">
+    <g class="quote-container" data-quote="3" opacity="0" style="animation-delay:14s">
       <text x="425" y="342" class="quote-text">“Design is not just what it looks like. Design is how it works.”</text>
       <text x="425" y="371" class="quote-author">— Steve Jobs</text>
     </g>
-    <g class="quote-container" data-quote="10" opacity="0" style="animation-delay:63s">
+    <g class="quote-container" data-quote="4" opacity="0" style="animation-delay:21s">
       <text x="425" y="342" class="quote-text">“What I cannot create, I do not understand.”</text>
       <text x="425" y="371" class="quote-author">— Richard Feynman</text>
     </g>
-    <g class="quote-container" data-quote="11" opacity="0" style="animation-delay:70s">
-      <text x="425" y="342" class="quote-text">“Somewhere, something incredible is waiting to be known.”</text>
+    <g class="quote-container" data-quote="5" opacity="0" style="animation-delay:28s">
+      <text x="425" y="342" class="quote-text">“Premature optimization is the root of all evil.”</text>
+      <text x="425" y="371" class="quote-author">— Donald Knuth</text>
+    </g>
+    <g class="quote-container" data-quote="6" opacity="0" style="animation-delay:35s">
+      <text x="425" y="342" class="quote-text">“We are what we repeatedly do.”</text>
+      <text x="425" y="371" class="quote-author">— Will Durant</text>
+    </g>
+    <g class="quote-container" data-quote="7" opacity="0" style="animation-delay:42s">
+      <text x="425" y="342" class="quote-text">“Science is a way of thinking much more than a body of knowledge.”</text>
       <text x="425" y="371" class="quote-author">— Carl Sagan</text>
+    </g>
+    <g class="quote-container" data-quote="8" opacity="0" style="animation-delay:49s">
+      <text x="425" y="342" class="quote-text">“Simplicity is the soul of efficiency.”</text>
+      <text x="425" y="371" class="quote-author">— Austin Freeman</text>
+    </g>
+    <g class="quote-container" data-quote="9" opacity="0" style="animation-delay:56s">
+      <text x="425" y="342" class="quote-text">“The art challenges the technology, and the technology inspires the art.”</text>
+      <text x="425" y="371" class="quote-author">— John Lasseter</text>
+    </g>
+    <g class="quote-container" data-quote="10" opacity="0" style="animation-delay:63s">
+      <text x="425" y="342" class="quote-text">“The best way to predict the future is to invent it.”</text>
+      <text x="425" y="371" class="quote-author">— Alan Kay</text>
+    </g>
+    <g class="quote-container" data-quote="11" opacity="0" style="animation-delay:70s">
+      <text x="425" y="342" class="quote-text">“The function of good software is to make the complex appear simple.”</text>
+      <text x="425" y="371" class="quote-author">— Grady Booch</text>
     </g>
     <g class="quote-container" data-quote="12" opacity="0" style="animation-delay:77s">
       <text x="425" y="342" class="quote-text">“The only way to do great work is to love what you do.”</text>
       <text x="425" y="371" class="quote-author">— Steve Jobs</text>
     </g>
     <g class="quote-container" data-quote="13" opacity="0" style="animation-delay:84s">
+      <text x="425" y="342" class="quote-text">“Not all those who wander are lost.”</text>
+      <text x="425" y="371" class="quote-author">— J. R. R. Tolkien</text>
+    </g>
+    <g class="quote-container" data-quote="14" opacity="0" style="animation-delay:91s">
       <text x="425" y="342" class="quote-text">“The universe is under no obligation to make sense to you.”</text>
       <text x="425" y="371" class="quote-author">— Neil deGrasse Tyson</text>
     </g>
-    <g class="quote-container" data-quote="14" opacity="0" style="animation-delay:91s">
-      <text x="425" y="342" class="quote-text">“The best way to predict the future is to invent it.”</text>
-      <text x="425" y="371" class="quote-author">— Alan Kay</text>
-    </g>
     <g class="quote-container" data-quote="15" opacity="0" style="animation-delay:98s">
-      <text x="425" y="342" class="quote-text">“The important thing is to never stop questioning.”</text>
-      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
+      <text x="425" y="342" class="quote-text">“There is no reason anyone would want a computer in their home.”</text>
+      <text x="425" y="371" class="quote-author">— Ken Olsen</text>
     </g>
     <g class="quote-container" data-quote="16" opacity="0" style="animation-delay:105s">
       <text x="425" y="342" class="quote-text">“The details are not the details. They make the design.”</text>
       <text x="425" y="371" class="quote-author">— Charles Eames</text>
     </g>
     <g class="quote-container" data-quote="17" opacity="0" style="animation-delay:112s">
-      <text x="425" y="342" class="quote-text">“We are what we repeatedly do.”</text>
-      <text x="425" y="371" class="quote-author">— Will Durant</text>
-    </g>
-    <g class="quote-container" data-quote="18" opacity="0" style="animation-delay:119s">
-      <text x="425" y="342" class="quote-text">“Not all those who wander are lost.”</text>
-      <text x="425" y="371" class="quote-author">— J. R. R. Tolkien</text>
-    </g>
-    <g class="quote-container" data-quote="19" opacity="0" style="animation-delay:126s">
-      <text x="425" y="342" class="quote-text">“Simplicity is the soul of efficiency.”</text>
-      <text x="425" y="371" class="quote-author">— Austin Freeman</text>
-    </g>
-    <g class="quote-container" data-quote="20" opacity="0" style="animation-delay:133s">
-      <text x="425" y="342" class="quote-text">“Stay hungry, stay foolish.”</text>
-      <text x="425" y="371" class="quote-author">— Steve Jobs</text>
-    </g>
-    <g class="quote-container" data-quote="21" opacity="0" style="animation-delay:140s">
-      <text x="425" y="342" class="quote-text">“Any sufficiently advanced technology is indistinguishable from magic.”</text>
-      <text x="425" y="371" class="quote-author">— Arthur C. Clarke</text>
-    </g>
-    <g class="quote-container" data-quote="22" opacity="0" style="animation-delay:147s">
       <text x="425" y="342" class="quote-text">“Programs must be written for people to read.”</text>
       <text x="425" y="371" class="quote-author">— Harold Abelson</text>
     </g>
+    <g class="quote-container" data-quote="18" opacity="0" style="animation-delay:119s">
+      <text x="425" y="342" class="quote-text">“Make it work, make it right, make it fast.”</text>
+      <text x="425" y="371" class="quote-author">— Kent Beck</text>
+    </g>
+    <g class="quote-container" data-quote="19" opacity="0" style="animation-delay:126s">
+      <text x="425" y="342" class="quote-text">“Any sufficiently advanced technology is indistinguishable from magic.”</text>
+      <text x="425" y="371" class="quote-author">— Arthur C. Clarke</text>
+    </g>
+    <g class="quote-container" data-quote="20" opacity="0" style="animation-delay:133s">
+      <text x="425" y="342" class="quote-text">“Creativity is intelligence having fun.”</text>
+      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
+    </g>
+    <g class="quote-container" data-quote="21" opacity="0" style="animation-delay:140s">
+      <text x="425" y="342" class="quote-text">“The important thing is to never stop questioning.”</text>
+      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
+    </g>
+    <g class="quote-container" data-quote="22" opacity="0" style="animation-delay:147s">
+      <text x="425" y="342" class="quote-text">“Stay hungry, stay foolish.”</text>
+      <text x="425" y="371" class="quote-author">— Steve Jobs</text>
+    </g>
     <g class="quote-container" data-quote="23" opacity="0" style="animation-delay:154s">
-      <text x="425" y="342" class="quote-text">“There is no reason anyone would want a computer in their home.”</text>
-      <text x="425" y="371" class="quote-author">— Ken Olsen</text>
+      <text x="425" y="342" class="quote-text">“The important thing is to never stop questioning.”</text>
+      <text x="425" y="371" class="quote-author">— Albert Einstein</text>
     </g>
     <g class="quote-container" data-quote="24" opacity="0" style="animation-delay:161s">
-      <text x="425" y="342" class="quote-text">“The future depends on what you do today.”</text>
-      <text x="425" y="371" class="quote-author">— Mahatma Gandhi</text>
+      <text x="425" y="342" class="quote-text">“The most dangerous phrase is: we've always done it this way.”</text>
+      <text x="425" y="371" class="quote-author">— Grace Hopper</text>
     </g>
     <!-- QUOTES_END -->
   </g>
