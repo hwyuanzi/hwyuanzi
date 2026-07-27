@@ -1,0 +1,125 @@
+<svg width="640" height="220" viewBox="0 0 640 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">hyuan.io</title>
+  <defs>
+    <style>
+      @keyframes drift1 { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(20px,-12px) scale(1.09); } }
+      @keyframes drift2 { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(-18px,10px) scale(.93); } }
+      @keyframes drift3 { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(15px,14px) scale(1.06); } }
+      @keyframes drift4 { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(-14px,-13px) scale(.95); } }
+      @keyframes sheen { 0%,20% { transform:translateX(-620px) skewX(-16deg); opacity:0; } 46% { opacity:.4; } 72%,100% { transform:translateX(620px) skewX(-16deg); opacity:0; } }
+      @keyframes shimmer { 0%,100% { opacity:.5; } 50% { opacity:.85; } }
+      @keyframes twinkle { 0%,100% { opacity:.25; transform:scale(.8); } 50% { opacity:.9; transform:scale(1.15); } }
+      @keyframes flow { to { stroke-dashoffset:-220; } }
+      @keyframes flowRev { to { stroke-dashoffset:220; } }
+      .blobA { animation:drift1 9s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+      .blobB { animation:drift2 12s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+      .blobC { animation:drift3 14s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+      .blobD { animation:drift4 10.5s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+      .sheen { animation:sheen 7.5s ease-in-out infinite; }
+      .rim-gloss { animation:shimmer 5s ease-in-out infinite; }
+      .spark { animation:twinkle 3.4s ease-in-out infinite; transform-box:fill-box; transform-origin:center; }
+      .wave-a { stroke-dasharray:13 11; animation:flow 6.5s linear infinite; }
+      .wave-b { stroke-dasharray:10 9; animation:flowRev 8s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .blobA,.blobB,.blobC,.blobD,.sheen,.rim-gloss,.spark,.wave-a,.wave-b { animation:none; }
+      }
+    </style>
+
+    <clipPath id="pillClip">
+      <rect x="60" y="42" width="520" height="136" rx="68"/>
+    </clipPath>
+
+    <filter id="liquidGoo" x="-40%" y="-60%" width="180%" height="260%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur"/>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.014 0.03" numOctaves="2" seed="6" result="noise">
+        <animate attributeName="baseFrequency" values="0.010 0.026;0.020 0.034;0.010 0.026" dur="16s" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="goo" in2="noise" scale="20" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+
+    <filter id="elevate" x="-30%" y="-40%" width="160%" height="220%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#2B2B33" flood-opacity=".22"/>
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-80%" width="140%" height="260%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#FFFFFF" flood-opacity=".7"/>
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#4A3F38" flood-opacity=".16"/>
+    </filter>
+
+    <linearGradient id="baseGrad" x1="60" y1="42" x2="580" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FBFBFD"/>
+      <stop offset="1" stop-color="#E8E8EF"/>
+    </linearGradient>
+
+    <radialGradient id="blobBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 90) scale(95 70)">
+      <stop offset="0" stop-color="#6FB1FC" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#6FB1FC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobViolet" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(420 95) scale(100 75)">
+      <stop offset="0" stop-color="#C68CF0" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#C68CF0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobPink" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(255 152) scale(92 66)">
+      <stop offset="0" stop-color="#FF9AC0" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FF9AC0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobMint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(472 148) scale(80 60)">
+      <stop offset="0" stop-color="#7BE0C9" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#7BE0C9" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="glassOverlay" x1="60" y1="42" x2="580" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".82"/>
+      <stop offset=".55" stop-color="#FFFFFF" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".32"/>
+    </linearGradient>
+
+    <linearGradient id="rimBorder" x1="60" y1="42" x2="580" y2="178" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#9DB4FF" stop-opacity=".55"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#elevate)">
+    <rect x="60" y="42" width="520" height="136" rx="68" fill="#E8E8EF"/>
+  </g>
+
+  <g clip-path="url(#pillClip)">
+    <rect x="60" y="42" width="520" height="136" rx="68" fill="url(#baseGrad)"/>
+
+    <g filter="url(#liquidGoo)">
+      <ellipse class="blobA" cx="170" cy="90" rx="95" ry="70" fill="url(#blobBlue)"/>
+      <ellipse class="blobB" cx="420" cy="95" rx="100" ry="75" fill="url(#blobViolet)"/>
+      <ellipse class="blobC" cx="255" cy="152" rx="92" ry="66" fill="url(#blobPink)"/>
+      <ellipse class="blobD" cx="472" cy="148" rx="80" ry="60" fill="url(#blobMint)"/>
+    </g>
+
+    <rect x="60" y="42" width="520" height="136" rx="68" fill="url(#glassOverlay)"/>
+
+    <ellipse class="rim-gloss" cx="320" cy="58" rx="220" ry="26" fill="#FFFFFF" opacity=".4"/>
+
+    <g class="sheen">
+      <rect x="0" y="10" width="90" height="220" fill="#FFFFFF" fill-opacity=".38"/>
+    </g>
+
+    <g opacity=".55" stroke-linecap="round" fill="none">
+      <path class="wave-a" d="M74 156 Q142 146 210 156 T346 156 T482 156 T566 156" stroke="#FFFFFF" stroke-width="2"/>
+      <path class="wave-b" d="M78 166 Q150 174 222 166 T366 166 T510 166 T566 166" stroke="#AFC6FF" stroke-width="1.6"/>
+    </g>
+
+    <g fill="#FFFFFF">
+      <circle class="spark" cx="204" cy="66" r="2.1" style="animation-delay:0s"/>
+      <circle class="spark" cx="404" cy="70" r="1.7" style="animation-delay:1.1s"/>
+      <circle class="spark" cx="506" cy="118" r="2" style="animation-delay:2s"/>
+      <circle class="spark" cx="152" cy="132" r="1.6" style="animation-delay:.6s"/>
+    </g>
+  </g>
+
+  <rect x="61" y="43" width="518" height="134" rx="67" fill="none" stroke="url(#rimBorder)" stroke-width="1.6"/>
+
+  <g filter="url(#textGlow)">
+    <text x="320" y="121" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="33" font-weight="680" letter-spacing="-.6" fill="#1D1D1F" fill-opacity=".94">hyuan.io<tspan dx="9" font-size="22" font-weight="600" fill-opacity=".72">&#8599;</tspan></text>
+  </g>
+</svg>
