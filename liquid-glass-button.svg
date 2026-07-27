@@ -1,0 +1,167 @@
+<svg width="850" height="525" viewBox="0 0 850 525" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">hyuan.io</title>
+  <defs>
+    <style>
+      @keyframes drift {
+        from { transform: translateX(0); }
+        to { transform: translateX(-200px); }
+      }
+      @keyframes lift {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes breathe {
+        0%,100% { opacity: .5; }
+        50% { opacity: .85; }
+      }
+      @keyframes pool {
+        0%,100% { opacity: .45; transform: translate(0,0); }
+        50% { opacity: .75; transform: translate(8px,-5px); }
+      }
+      .drift1 { animation: drift 32s linear infinite; }
+      .drift2 { animation: drift 46s linear infinite; }
+      .drift3 { animation: drift 64s linear infinite; }
+      .lift { animation: lift 14s ease-in-out infinite; }
+      .breathe { animation: breathe 11s ease-in-out infinite; }
+      .pool { animation: pool 16s ease-in-out infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .drift1,.drift2,.drift3,.lift,.breathe,.pool { animation: none; }
+      }
+    </style>
+
+    <linearGradient id="canvas" x1="425" y1="0" x2="425" y2="525" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FAF9F5"/>
+      <stop offset=".4" stop-color="#F5F4ED"/>
+      <stop offset=".75" stop-color="#EFECE3"/>
+      <stop offset="1" stop-color="#E8E6DC"/>
+    </linearGradient>
+
+    <radialGradient id="warmPool" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(425 50) scale(340 200)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".75"/>
+      <stop offset=".55" stop-color="#EBDBBC" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#F5F4ED" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="clayGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(640 110) scale(300 210)">
+      <stop offset="0" stop-color="#D97757" stop-opacity=".32"/>
+      <stop offset=".55" stop-color="#C96442" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#D97757" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="kraftGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 400) scale(280 160)">
+      <stop offset="0" stop-color="#D4A27F" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#D4A27F" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="coralGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 190) scale(210 115)">
+      <stop offset="0" stop-color="#EBCECE" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#EBCECE" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="oatGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(720 340) scale(230 130)">
+      <stop offset="0" stop-color="#E3DACC" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#E3DACC" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="wave1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".65"/>
+      <stop offset=".35" stop-color="#EBDBBC" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#F5F4ED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E3DACC" stop-opacity=".5"/>
+      <stop offset=".45" stop-color="#D4A27F" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#F5F4ED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EBCECE" stop-opacity=".48"/>
+      <stop offset=".5" stop-color="#D97757" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#F5F4ED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wave4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D4A27F" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#E8E6DC" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+    <filter id="waveBlur" x="-3%" y="-12%" width="106%" height="124%">
+      <feGaussianBlur stdDeviation="3.2"/>
+    </filter>
+    <filter id="elev" x="-35%" y="-70%" width="170%" height="260%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#8C6656" flood-opacity=".08"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#8C6656" flood-opacity=".14"/>
+    </filter>
+
+    <clipPath id="frame">
+      <rect width="850" height="525" rx="36"/>
+    </clipPath>
+
+    <linearGradient id="glassFill" x1="236" y1="218" x2="614" y2="308" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".48"/>
+      <stop offset=".48" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".14"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="236" y1="218" x2="236" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".42"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="236" y1="218" x2="236" y2="308" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset=".3" stop-color="#FFFFFF" stop-opacity=".2"/>
+      <stop offset=".72" stop-color="#FFFFFF" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#D97757" stop-opacity=".28"/>
+    </linearGradient>
+    <linearGradient id="border" x1="236" y1="218" x2="614" y2="308" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#D97757" stop-opacity=".35"/>
+    </linearGradient>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="850" height="525" fill="url(#canvas)"/>
+    <ellipse class="breathe" cx="425" cy="50" rx="340" ry="200" fill="url(#warmPool)"/>
+    <ellipse class="pool" cx="640" cy="110" rx="300" ry="210" fill="url(#clayGlow)"/>
+    <ellipse class="pool" cx="180" cy="400" rx="280" ry="160" fill="url(#kraftGlow)" style="animation-delay:5s"/>
+
+    <g filter="url(#soft)">
+      <ellipse class="pool" cx="150" cy="190" rx="210" ry="115" fill="url(#coralGlow)"/>
+      <ellipse class="pool" cx="720" cy="340" rx="230" ry="130" fill="url(#oatGlow)" style="animation-delay:3s"/>
+      <ellipse class="pool" cx="420" cy="270" rx="170" ry="85" fill="#FFFFFF" fill-opacity=".4" style="animation-delay:7s"/>
+    </g>
+
+    <g class="lift" filter="url(#waveBlur)">
+      <g class="drift1">
+        <path d="M-200 115 C-110 85 -20 145 70 115 S250 85 340 115 S520 145 610 115 S790 85 880 115 S1060 145 1150 115 V540 H-200 Z" fill="url(#wave1)"/>
+      </g>
+      <g class="drift2">
+        <path d="M-200 205 C-110 176 -20 234 70 205 S250 176 340 205 S520 234 610 205 S790 176 880 205 S1060 234 1150 205 V540 H-200 Z" fill="url(#wave2)"/>
+      </g>
+      <g class="drift3">
+        <path d="M-200 305 C-110 278 -20 332 70 305 S250 278 340 305 S520 332 610 305 S790 278 880 305 S1060 332 1150 305 V540 H-200 Z" fill="url(#wave3)"/>
+      </g>
+      <g class="drift2" style="animation-duration:72s">
+        <path d="M-200 400 C-110 378 -20 422 70 400 S250 378 340 400 S520 422 610 400 S790 378 880 400 S1060 422 1150 400 V540 H-200 Z" fill="url(#wave4)"/>
+      </g>
+    </g>
+
+    <g filter="url(#elev)">
+      <rect x="236" y="218" width="378" height="90" rx="45" fill="url(#glassFill)"/>
+      <rect x="236" y="218" width="378" height="90" rx="45" fill="url(#sheen)"/>
+      <rect x="236.5" y="218.5" width="377" height="89" rx="44.5" fill="none" stroke="url(#border)" stroke-width="1"/>
+      <rect x="237.5" y="219.5" width="375" height="87" rx="43.5" fill="none" stroke="url(#rim)" stroke-width="1.15" opacity=".75"/>
+    </g>
+
+    <text x="425" y="263"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif"
+          font-size="27"
+          font-weight="700"
+          letter-spacing="0.35"
+          fill="#141413"
+          fill-opacity=".9">hyuan.io</text>
+  </g>
+</svg>
